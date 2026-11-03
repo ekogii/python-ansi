@@ -74,7 +74,7 @@ class ansi:
 	
 	# 256-colour foreground
 	def fg_256(self, n: int) -> ansi:
-		assert(0 <= n <= 255)
+		assert(0 <= int(n) <= 255)
 		self.attributes.append("38")
 		self.attributes.append("5")
 		self.attributes.append(str(int(n)))
@@ -82,7 +82,7 @@ class ansi:
 	
 	# 256-colour background
 	def bg_256(self, n: int) -> ansi:
-		assert(0 <= n <= 255)
+		assert(0 <= int(n) <= 255)
 		self.attributes.append("48")
 		self.attributes.append("5")
 		self.attributes.append(str(int(n)))
@@ -90,9 +90,9 @@ class ansi:
 	
 	# 24-bit true colour foreground
 	def fg_true_colour(self, r: int, g: int, b: int) -> ansi:
-		assert(0 <= r <= 255)
-		assert(0 <= g <= 255)
-		assert(0 <= b <= 255)
+		assert(0 <= int(r) <= 255)
+		assert(0 <= int(g) <= 255)
+		assert(0 <= int(b) <= 255)
 		self.attributes.append("38")
 		self.attributes.append("2")
 		self.attributes.append(str(int(r)))
@@ -102,9 +102,9 @@ class ansi:
 	
 	# 24-bit true colour background
 	def bg_true_colour(self, r: int, g: int, b: int) -> ansi:
-		assert(0 <= r <= 255)
-		assert(0 <= g <= 255)
-		assert(0 <= b <= 255)
+		assert(0 <= int(r) <= 255)
+		assert(0 <= int(g) <= 255)
+		assert(0 <= int(b) <= 255)
 		self.attributes.append("48")
 		self.attributes.append("2")
 		self.attributes.append(str(int(r)))
