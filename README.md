@@ -10,7 +10,7 @@ You can reset the colour and style of the text using `\033[0m`.
 
 ## Installation
 1. Download the latest version of the `python-ansi` script from the [releases tab](https://github.com/ekogii/python-ansi/releases).
-2. Copy or Move the script to the location of the python script you want to use *python-ansi* in.
+2. Copy or Move the script to the location of the python script you want to use `python-ansi` in.
 
 ***Alternative Method:***
 1. Clone the Git repository:
@@ -19,7 +19,7 @@ $ git clone https://github.com/ekogii/python-ansi.git /tmp/python-ansi
 ```
 > Note: *You can replace `/tmp/python-ansi` with any other file location if you wish.*
 
-2. Copy or Move the script to the location of the python script you want to use *python-ansi* in:
+2. Copy or Move the script to the location of the python script you want to use `python-ansi` in:
 ```
 $ cp /tmp/python-ansi/ansi.py /path/to/desired/location
 ```
@@ -88,9 +88,9 @@ Methods for foreground colours in order:
 black()     bright_black()
 red()       bright_red()
 green()     bright_green()
-yellow()    bright_yellow
+yellow()    bright_yellow()
 blue()      bright_blue()
-magenta()   bright_magenta
+magenta()   bright_magenta()
 cyan()      bright_cyan()
 white()     bright_white()
 ```
