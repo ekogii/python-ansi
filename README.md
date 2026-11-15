@@ -9,22 +9,16 @@ For example, here is an **ANSI** colour code to make text *red*: `\033[31m`<br/>
 You can reset the colour and style of the text using `\033[0m`.
 
 ## Installation
-1. Download the latest version of the `python-ansi` script from the [releases tab](https://github.com/ekogii/python-ansi/releases).
-2. Copy or Move the script to the location of the python script you want to use `python-ansi` in.
+CD into the directory where you want to place the script, and use `curl` or `wget`.<br/>
+```bash
+# Curl:
+$ curl -fsSL https://raw.githubusercontent.com/ekogii/python-ansi/master/ansi.py >ansi.py
 
-***Alternative Method:***
-1. Clone the Git repository:
-```
-$ git clone https://github.com/ekogii/python-ansi.git /tmp/python-ansi
-```
-> Note: *You can replace `/tmp/python-ansi` with any other file location if you wish.*
-
-2. Copy or Move the script to the location of the python script you want to use `python-ansi` in:
-```
-$ cp /tmp/python-ansi/ansi.py /path/to/desired/location
+# Wget:
+$ wget https://raw.githubusercontent.com/ekogii/python-ansi/master/ansi.py
 ```
 
-### And you are done with installation!
+
 
 ---
 
